@@ -1,33 +1,9 @@
 var images = [];
 
 var indicators = document.querySelectorAll(".gallery-wrapper .gallery-indicators img");
-for (var i = 0; i < indicators.length; i++) {
-    images.push(indicators[i]);
-    indicators[i].addEventListener('click', function (e) {
-        var slide = document.getElementById('gallery-slide');
-
-        currentSlide = i;
-        slide.src = e.currentTarget.src;
-
-        indicators.forEach((value) => {
-            var classes = value.className;
-            if (classes.indexOf('selected')) {
-                e.currentTarget.className = classes.replace('selected', '');
-            }
-        });
-
-        if (e.currentTarget.className !== '' || undefined) {
-            e.currentTarget.className += " selected";
-        } else {
-            e.currentTarget.className = "selected";
-        }
-
-        clearInterval(slideTimer);
-        slideTimer = setInterval(function () {
-            changeSlide(1);
-        }, 10000);
-    });
-}
+indicators.forEach((value) => {
+    images.push(value);
+});
 
 currentSlide = 0;
 maxSlides = 5;
@@ -46,6 +22,21 @@ function setupSlider() {
     var slideTimer = setInterval(function () {
         changeSlide(1);
     }, 10000);
+
+    for (var i = 0; i < indicators.length; i++) {
+        images.push(indicators[i]);
+        indicators[i].addEventListener('click', function (e) {
+            var slide = document.getElementById('gallery-slide');
+
+            currentSlide = i;
+            slide.src = e.currentTarget.src;
+
+            clearInterval(slideTimer);
+            slideTimer = setInterval(function () {
+                changeSlide(1);
+            }, 10000);
+        });
+    }
 
     controlLeft.addEventListener('click', function () {
         changeSlide(-1);
