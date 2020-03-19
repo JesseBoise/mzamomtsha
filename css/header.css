@@ -17,7 +17,9 @@ header {
 .logo {
     margin-right: auto;
 	display: table;
-	float: left;
+    float: left;
+    display: inline-block;
+    padding: 5px;
 }
 
 .navigation {
