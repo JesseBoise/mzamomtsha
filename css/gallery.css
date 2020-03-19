@@ -48,5 +48,5 @@ html, body {
 }
 
 .gallery-wrapper .gallery-indicators img:hover {
-    filter: brightness(80%);
+    filter: brightness(50%);
 }
