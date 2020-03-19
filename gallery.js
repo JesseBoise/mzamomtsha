@@ -3,6 +3,10 @@ var images = [];
 var indicators = document.querySelectorAll(".gallery-wrapper .gallery-indicators img");
 for (var i = 0; i < indicators.length; i++) {
     images.push(indicators[i]);
+    indicators[i].addEventListener('click', function () {
+        currentSlide = i;
+        slide.src = images[currentSlide].src;
+    });
 }
 
 currentSlide = 0;
@@ -19,21 +23,21 @@ function setupSlider() {
 
     setSlide(0);
 
-    var slideTimer = setInterval(function() {
+    var slideTimer = setInterval(function () {
         changeSlide(1);
     }, 10000);
 
     controlLeft.addEventListener('click', function () {
         changeSlide(-1);
         clearInterval(slideTimer);
-        slideTimer = setInterval(function() {
+        slideTimer = setInterval(function () {
             changeSlide(1);
         }, 10000);
     });
-    controlRight.addEventListener('click', function() {
+    controlRight.addEventListener('click', function () {
         changeSlide(1);
         clearInterval(slideTimer);
-        slideTimer = setInterval(function() {
+        slideTimer = setInterval(function () {
             changeSlide(1);
         }, 10000);
     });
