@@ -13,7 +13,12 @@ for (var i = 0; i < indicators.length; i++) {
             var classes = e.currentTarget.className;
             e.currentTarget.className = classes.replace('selected', '');
         });
-        e.currentTarget.className += " selected";
+
+        if (e.currentTarget.className !== '') {
+            e.currentTarget.className += " selected";
+        } else {
+            e.currentTarget.className = "selected";
+        }
 
         clearInterval(slideTimer);
         slideTimer = setInterval(function () {
