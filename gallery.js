@@ -8,6 +8,11 @@ for (var i = 0; i < indicators.length; i++) {
 
         currentSlide = i;
         slide.src = e.currentTarget.src;
+
+        clearInterval(slideTimer);
+        slideTimer = setInterval(function () {
+            changeSlide(1);
+        }, 10000);
     });
 }
 
