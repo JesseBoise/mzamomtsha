@@ -18,8 +18,12 @@ header {
     margin-right: auto;
 	display: table;
     float: left;
-    display: inline-block;
     padding: 5px;
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
 }
 
 .navigation {
