@@ -29,6 +29,7 @@ function setupSlider() {
             var slide = document.getElementById('gallery-slide');
 
             currentSlide = i;
+            slide.setAttribute("object-align", e.currentTarget.getAttribute('object-align'));
             slide.src = e.currentTarget.src;
 
             clearInterval(slideTimer);
@@ -60,6 +61,7 @@ function setupSlider() {
             currentSlide = Math.abs(currentSlide) - (Math.floor(Math.abs(currentSlide) / maxSlides) * maxSlides);
         }
 
+        slide.setAttribute("object-align", images[currentSlide].getAttribute("object-align"));
         slide.src = images[currentSlide].src;
     }
     function setSlide(byAmount) {
@@ -71,6 +73,7 @@ function setupSlider() {
             currentSlide = maxSlides;
         }
 
+        slide.setAttribute("object-align", images[currentSlide].getAttribute("object-align"));
         slide.src = images[currentSlide].src;
     }
 }
