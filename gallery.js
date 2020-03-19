@@ -3,11 +3,11 @@ var images = [];
 var indicators = document.querySelectorAll(".gallery-wrapper .gallery-indicators img");
 for (var i = 0; i < indicators.length; i++) {
     images.push(indicators[i]);
-    indicators[i].addEventListener('click', function () {
+    indicators[i].addEventListener('click', function (e) {
         var slide = document.getElementById('gallery-slide');
 
         currentSlide = i;
-        slide.src = images[currentSlide].src;
+        slide.src = e.currentTarget.src;
     });
 }
 
