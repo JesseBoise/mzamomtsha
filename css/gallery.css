@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    font-family: Calibri;
+}
+
+.gallery-wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 15px;
+    box-shadow: 0 8px 12px #CCC;
+}
+
+.gallery-wrapper .gallery-header h1 {
+    margin: 0;
+}
+
+.gallery-wrapper .gallery-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.gallery-wrapper .gallery-slides {
+    width: 100%;
+    height: 320px;
+    background-color: white;
+}
+
+.gallery-wrapper .gallery-slides #gallery-slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.45s;
+}
+
+.gallery-wrapper .gallery-indicators {
+    display: flex;
+    height: 80px;
+}
+
+.gallery-wrapper .gallery-indicators img {
+    height: 100%;
+    object-fit: cover;
+    flex: 1;
+}
