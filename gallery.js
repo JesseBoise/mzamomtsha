@@ -9,8 +9,8 @@ for (var i = 0; i < indicators.length; i++) {
         currentSlide = i;
         slide.src = e.currentTarget.src;
 
-        indicators.forEach((e) => {
-            var classes = e.currentTarget.className;
+        indicators.forEach((value) => {
+            var classes = value.className;
             e.currentTarget.className = classes.replace('selected', '');
         });
 
