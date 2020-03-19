@@ -14,7 +14,7 @@ for (var i = 0; i < indicators.length; i++) {
             e.currentTarget.className = classes.replace('selected', '');
         });
 
-        if (e.currentTarget.className !== '') {
+        if (e.currentTarget.className !== '' || undefined) {
             e.currentTarget.className += " selected";
         } else {
             e.currentTarget.className = "selected";
