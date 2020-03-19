@@ -11,7 +11,9 @@ for (var i = 0; i < indicators.length; i++) {
 
         indicators.forEach((value) => {
             var classes = value.className;
-            e.currentTarget.className = classes.replace('selected', '');
+            if (classes.indexOf('selected')) {
+                e.currentTarget.className = classes.replace('selected', '');
+            }
         });
 
         if (e.currentTarget.className !== '' || undefined) {
