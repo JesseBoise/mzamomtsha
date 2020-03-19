@@ -22,3 +22,11 @@
     top: 0;
     right: 0;
 }
+
+.teacher-application {
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 8px 8px 24px #CCC;
+    margin-bottom: 18px;
+}
