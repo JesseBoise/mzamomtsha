@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Contact Mzamomtsha Primary School | Mzamomtsha</title>
+
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link href="css/map.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="inner_header">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <ul class="navigation">
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="/about.html">
+                    <li>About</li>
+                </a>
+                <a href="/contact.html">
+                    <li>Contact</li>
+                </a>
+                <a href="/donate.html">
+                    <li>Donation</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <!-- BODY -->
+    <main>
+        <div id="map"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer></footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        function initMap() {
+            var coordinates = { lat: -34.003386, lng: 18.651124 };
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: coordinates
+            });
+            var marker = new google.maps.Marker({
+                position: coordinates,
+                map: map
+            });
+        }
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpqH9wNGnc7U4t5GzXzvwVu6E6SgPizSk&callback=initMap"></script>
+</body>
+
+</html>
