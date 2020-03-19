@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Donate to Mzamomtsha Primary School | Mzamomtsha</title>
+
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="inner_header">
+            <div class="logo">
+                <img src="images/logo.png">
+
+            </div>
+            <ul class="navigation">
+                <a href="#Home">
+                    <li>Home</li>
+                </a>
+                <a href="#About">
+                    <li>About</li>
+                </a>
+                <a href="#Contact">
+                    <li>Contact</li>
+                </a>
+                <a href="#Donation">
+                    <li>Donation</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <!-- BODY -->
+    <main>
+        <!-- DONATION FORM -->
+        <form action="process.php" method= "POST">
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName"
+                placeholder="Enter first name">
+            </div>
+            <br>	
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="last name"
+                placeholder="Enter last name">
+            </div>
+            <br>
+            <div>
+                 <label>Organization</label>
+                 <input type="text" name="Organization name"
+                 placeholder="Enter Organization name">
+             </div>
+             <br>
+            <div>
+                <label>Email</label>
+                <input type="Email" name="Email"
+                placeholder="Enter Email Address">
+            </div>
+            <br>
+            <div>
+                <label>Amount</label>
+                <textarea name="Message"></textarea>
+                
+            </div>
+            <br>
+            <div>
+                <label>Type of donation</label>
+                <select name="Donation type">
+                     <option value="One time Donation">One time Donation</option>
+                     <option value="Monthly Donation">Monthly Donation</option>
+                     
+ 
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit" name="Donate"
+                value="Donate">	
+             </div>   
+        </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer></footer>
+</body>
+
+</html>
