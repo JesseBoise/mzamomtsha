@@ -1,8 +1,8 @@
-var imageNames = [];
+var images = [];
 
 var indicators = document.querySelectorAll(".gallery-wrapper .gallery-indicators img");
 for (var i = 0; i < indicators.length; i++) {
-    imageNames.push(indicators[i].src);
+    images.push(indicators[i]);
 }
 
 currentSlide = 0;
@@ -28,14 +28,14 @@ function setupSlider() {
         clearInterval(slideTimer);
         slideTimer = setInterval(function() {
             changeSlide(1);
-        }, 1000);
+        }, 10000);
     });
     controlRight.addEventListener('click', function() {
         changeSlide(1);
         clearInterval(slideTimer);
         slideTimer = setInterval(function() {
             changeSlide(1);
-        }, 1000);
+        }, 10000);
     });
 
     function changeSlide(byAmount) {
@@ -45,7 +45,7 @@ function setupSlider() {
             currentSlide = Math.abs(currentSlide) - (Math.floor(Math.abs(currentSlide) / maxSlides) * maxSlides);
         }
 
-        slide.src = imageNames[currentSlide];
+        slide.src = images[currentSlide].src;
     }
     function setSlide(byAmount) {
         currentSlide = byAmount;
@@ -56,6 +56,6 @@ function setupSlider() {
             currentSlide = maxSlides;
         }
 
-        slide.src = imageNames[currentSlide];
+        slide.src = images[currentSlide].src;
     }
 }

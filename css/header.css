@@ -6,6 +6,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 99;
+    margin-bottom: 18px;
 }
 .inner_header {
 	width: 800px;
@@ -20,9 +21,11 @@ header {
     float: left;
     padding: 5px;
     height: 100%;
+    display: inline-block;
 }
 
 .logo img {
+    display: block;
     height: 100%;
 }
 

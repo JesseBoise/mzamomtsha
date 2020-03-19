@@ -10,7 +10,7 @@ html, body {
     max-width: 850px;
     margin: 0 auto;
     padding: 15px;
-    box-shadow: 0 8px 12px #CCC;
+    box-shadow: 0 8px 12px -8px #CCC;
 }
 
 .gallery-wrapper .gallery-header h1 {
