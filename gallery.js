@@ -9,6 +9,11 @@ for (var i = 0; i < indicators.length; i++) {
         currentSlide = i;
         slide.src = e.currentTarget.src;
 
+        indicators.forEach((e) => {
+            e.currentTarget.classList.remove('selected');
+        });
+        e.currentTarget.classList.add("selected");
+
         clearInterval(slideTimer);
         slideTimer = setInterval(function () {
             changeSlide(1);
