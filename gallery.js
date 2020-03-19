@@ -4,6 +4,8 @@ var indicators = document.querySelectorAll(".gallery-wrapper .gallery-indicators
 for (var i = 0; i < indicators.length; i++) {
     images.push(indicators[i]);
     indicators[i].addEventListener('click', function () {
+        var slide = document.getElementById('gallery-slide');
+
         currentSlide = i;
         slide.src = images[currentSlide].src;
     });
