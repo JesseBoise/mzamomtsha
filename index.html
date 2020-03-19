@@ -4,10 +4,32 @@
 
 <head>
     <title>Welcome to Mzamomtsha Primary School | Mzamomtsha</title>
+
+    <style>
+        #logo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: block infinite 5s;
+        }
+
+        @keyframes blob {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.5);
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+    </style>
 </head>
 
 <body>
-
+    <img id="logo" src="images/logo.png" />
 </body>
 
 </html>
