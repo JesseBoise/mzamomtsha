@@ -6,14 +6,14 @@ footer {
 }
 
 footer .footer-content {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 350px;
   display: flex;
 }
 
 footer .footer-content .footer-section {
   flex: 1;
-  border: white 2px solid;
+  /* border: white 2px solid; */
   padding: 25px;
 }
 
