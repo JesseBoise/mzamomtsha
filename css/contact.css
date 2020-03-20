@@ -5,6 +5,7 @@
 
 .contact-information .fas {
     float: left;
+    margin-right: 8px;
 }
 
 .contact-information pre {
