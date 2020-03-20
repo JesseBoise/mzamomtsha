@@ -1,13 +1,13 @@
 footer {
   background: #303036;
   color: #d3d3d3;
-  height: 400px;
+  /* height: 400px; */
   position: relative;
 }
 
 footer .footer-content {
   /* border: 2px solid red; */
-  height: 350px;
+  /* height: 350px; */
   display: flex;
 }
 
