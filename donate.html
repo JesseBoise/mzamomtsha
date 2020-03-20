@@ -39,52 +39,51 @@
     <!-- BODY -->
     <main>
         <!-- DONATION FORM -->
-        <h2>MAKE A GIFT</h2>
-        <form action="process.php" method= "POST">
-            <div>
-                <label>First Name</label>
-                <input type="text" name="firstName"
-                placeholder="Enter first name">
-            </div>
-            <br>	
-            <div>
-                <label>Last Name</label>
-                <input type="text" name="last name"
-                placeholder="Enter last name">
-            </div>
-            <br>
-            <div>
-                 <label>Organization</label>
-                 <input type="text" name="Organization name"
-                 placeholder="Enter Organization name">
-             </div>
-             <br>
-            <div>
-                <label>Email</label>
-                <input type="Email" name="Email"
-                placeholder="Enter Email Address">
-            </div>
-            <br>
-            <div>
-                <label>Amount</label>
-                <textarea name="Message"></textarea>
-                
-            </div>
-            <br>
-            <div>
-                <label>Type of donation</label>
-                <select name="Donation type">
-                     <option value="One time Donation">One time Donation</option>
-                     <option value="Monthly Donation">Monthly Donation</option>
-                     
- 
-                </select>
-            </div>
-            <br>
-            <div>
-                <input type="submit" name="Donate"
-                value="Donate">	
-             </div>   
+        <h1>The input form for contribution</h1>
+
+        <p>The form attribute specifies the form an input element belongs to and how much the volunteer or
+            applicant would like to donate towards our future.</p>
+
+        <form action="/action_page.php" id="form1">
+            <p>Name
+                <input type="text" placeholder="Enter Name">
+            </P>
+
+            <p>Email
+                <input type="email" placeholder="Enter Email">
+            </p>
+
+            <p>
+                <input type="text" id="fname" name="fname">
+                <br>
+                <br>
+
+                <p>The "Last name" field below is outside the form element, but still part of the form.</p>
+
+                <label for="lname">Last name:</label>
+
+                <input type="text" id="lname" name="lname" form="form1">
+                <input type="radio" id="male" name="gender" value="male">
+
+                <br>
+
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" name="gender" value="female">
+
+                <label for="female">Female</label>
+                <br>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+
+                <p>Password
+                    <input type="Amount" placeholder="Enter Amount">
+                </p>
+
+                <p>
+                    <input type="submit">
+                </p>
         </form>
     </main>
 
