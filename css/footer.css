@@ -27,12 +27,11 @@ footer .footer-content .footer-section.about {
 }
 
 img[class^="fa"] {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
+  font-size: 1em;
+  width: 1em;
+  height: 1em;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
 }
 
 .footer-bottom {
