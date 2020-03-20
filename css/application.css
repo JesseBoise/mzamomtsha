@@ -51,7 +51,7 @@
   padding: 8px 0;
 }
 
-.teacher-application .input-field .field-input:not(input[type="file"]) {
+.teacher-application .input-field .field-input {
   display: block;
   width: 60%;
   vertical-align: middle;
@@ -63,6 +63,7 @@
 }
 
 .teacher-application .input-field textarea.field-input {
+
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 8px 12px;
