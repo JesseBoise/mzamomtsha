@@ -5,6 +5,11 @@ footer {
   position: relative;
 }
 
+footer a {
+  color: #AAA;
+  text-decoration: none;
+}
+
 footer .footer-content {
   /* border: 2px solid red; */
   /* height: 350px; */
@@ -19,7 +24,11 @@ footer .footer-content .footer-section {
 }
 
 footer .footer-content .footer-section.about {
-  flex:2;
+  flex: 2;
+}
+
+footer .footer-content .footer-section .contact > div {
+  margin: 3px 0;
 }
 
 .socials {
