@@ -87,24 +87,27 @@
             <form action="/action_page.php" method="post">
                 <div class="input-field">
                     <label for="applicant-firstname" class="field-label">First Name</label>
-                    <input type="text" id="applicant-firstname" name="firstName" class="field-input" placeholder="Enter first name">
+                    <input type="text" id="applicant-firstname" name="firstName" class="field-input"
+                        placeholder="Enter first name">
                 </div>
                 <br>
                 <div class="input-field">
                     <label for="applicant-lastname" class="field-label">Last Name</label>
-                    <input type="text" id="applicant-lastname" name="last name" class="field-input" placeholder="Enter last name">
+                    <input type="text" id="applicant-lastname" name="last name" class="field-input"
+                        placeholder="Enter last name">
                 </div>
                 <br>
                 <div class="input-field">
                     <label for="applicant-phone" class="field-label">Phone Number</label>
-                    <input type="type" id="applicant-phone" name="phone number" class="field-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        placeholder="Enter phone number">
+                    <input type="type" id="applicant-phone" name="phone number" class="field-input"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter phone number">
                     <p class="field-extra">In the format ###-###-####</p>
                 </div>
                 <br>
                 <div class="input-field">
                     <label for="applicant-email" class="field-label">Email</label>
-                    <input type="Email" id="applicant-email" name="Email" class="field-input" placeholder="Enter Email Address">
+                    <input type="Email" id="applicant-email" name="Email" class="field-input"
+                        placeholder="Enter Email Address">
                 </div>
                 <br>
                 <div class="input-field">
@@ -119,16 +122,15 @@
                         <option value="female">Female</option>
                         <option value="Other">Other</option>
                     </select>
-                    <br>
                 </div>
                 <br>
                 <div class="input-field">
                     <label for="applicant-resume" class="field-label">Upload Resume</label>
                     <input type="file" id="applicant-resume" name="uploaded_file" class="field-input"></input><br />
-                    <input type="submit" value="Upload" class="field-extra"></input>
+                    <!-- <input type="submit" value="Upload" class="field-extra"></input> -->
                 </div>
                 <br>
-                <input type="submit" name="submit" value="Submit">
+                <input type="submit" class="teacher-submit" name="submit" value="Submit">
             </form>
         </div>
     </main>
