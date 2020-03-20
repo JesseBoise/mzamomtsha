@@ -2,7 +2,6 @@
   overflow: hidden;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 8px 8px 24px #ccc;
 }
 
 #map {
@@ -18,4 +17,5 @@
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
+  box-shadow: 8px 8px 12px #ccc;
 }
