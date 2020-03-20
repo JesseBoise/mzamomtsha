@@ -3,6 +3,8 @@ footer {
   color: #d3d3d3;
   /* height: 400px; */
   position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
 footer a {
@@ -14,6 +16,7 @@ footer .footer-content {
   /* border: 2px solid red; */
   /* height: 350px; */
   display: flex;
+  margin-bottom: 50px;
 }
 
 footer .footer-content .footer-section {
