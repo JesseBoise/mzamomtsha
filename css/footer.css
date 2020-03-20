@@ -1,17 +1,17 @@
-.footer {
+footer {
   background: #303036;
   color: #d3d3d3;
   height: 400px;
   position: relative;
 }
 
-.footer .footer-content {
+footer .footer-content {
   border: 2px solid red;
   height: 350px;
   display: flex;
 }
 
-.footer .footer-content .footer-section {
+footer .footer-content .footer-section {
   flex: 1;
   border: white 2px solid;
   padding: 25px;
