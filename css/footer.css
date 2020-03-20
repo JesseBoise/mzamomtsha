@@ -35,7 +35,7 @@ footer .footer-content .footer-section .contact > div {
   color: lawngreen;
 }
 
-img[class^="fa"] {
+i[class^="fa"] {
   font-size: 1em;
   width: 1em;
   height: 1em;
