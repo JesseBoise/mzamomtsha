@@ -17,6 +17,10 @@ footer .footer-content .footer-section {
   padding: 25px;
 }
 
+footer .footer-content .footer-section.about {
+  flex:2;
+}
+
 .socials {
   color: lawngreen;
 }
