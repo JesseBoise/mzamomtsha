@@ -1,0 +1,13 @@
+main {
+    text-align: center;
+    width: 65%;
+}
+
+main .page-title {
+    margin-bottom: 18px;
+}
+
+main p {
+    font-size: 1.2em;
+    margin-bottom: 18px;
+}
