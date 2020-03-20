@@ -1,4 +1,14 @@
+.map-wrapper {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 8px 8px 24px #ccc;
+}
+
 #map {
+  display: block;
   height: 330px;
   width: 100%;
+}
+
+.map-wrapper .map-image {
 }
