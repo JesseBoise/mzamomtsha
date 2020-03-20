@@ -26,7 +26,7 @@ footer .footer-content .footer-section.about {
   color: lawngreen;
 }
 
-.fa {
+img[class^="fa"] {
   padding: 20px;
   font-size: 30px;
   width: 30px;
