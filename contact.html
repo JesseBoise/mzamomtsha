@@ -10,6 +10,7 @@
     <link href="css/common.css" rel="stylesheet" type="text/css" />
     <link href="css/header.css" rel="stylesheet" type="text/css" />
     <link href="css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="css/contact.css" rel="stylesheet" type="text/css" />
     <link href="css/map.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -55,12 +56,14 @@
             </div>
         </div>
 
-        <div class="map">
+        <div class="map-wrapper">
             <h1>Find us here</h1>
-        <div id="map"></div>
+            <div id="map">
+                <img src="images/map_01.png" class="map-image" />
+            </div>
         </div>
     </main>
-    
+
     <!-- FOOTER -->
     <footer>
         <div class="footer-content">
@@ -127,22 +130,10 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script>
-        function initMap() {
-            var coordinates = { lat: -34.003386, lng: 18.651124 };
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 12,
-                center: coordinates
-            });
-            var marker = new google.maps.Marker({
-                position: coordinates,
-                map: map
-            });
-        }
-    </script>
+    <!-- <script src="js/map.js"></script> -->
 
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpqH9wNGnc7U4t5GzXzvwVu6E6SgPizSk&callback=initMap"></script>
+    <!-- <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpqH9wNGnc7U4t5GzXzvwVu6E6SgPizSk&callback=initMap"></script> -->
 </body>
 
 </html>
