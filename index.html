@@ -85,36 +85,36 @@
             <br>
             <!-- Forms -->
             <form action="/action_page.php" method="post">
-                <div>
-                    <label for="applicant-firstname">First Name</label>
-                    <input type="text" id="applicant-firstname" name="firstName" placeholder="Enter first name">
+                <div class="input-field">
+                    <label for="applicant-firstname" class="field-label">First Name</label>
+                    <input type="text" id="applicant-firstname" name="firstName" class="field-input" placeholder="Enter first name">
                 </div>
                 <br>
-                <div>
-                    <label for="applicant-lastname">Last Name</label>
-                    <input type="text" id="applicant-lastname" name="last name" placeholder="Enter last name">
+                <div class="input-field">
+                    <label for="applicant-lastname" class="field-label">Last Name</label>
+                    <input type="text" id="applicant-lastname" name="last name" class="field-input" placeholder="Enter last name">
                 </div>
                 <br>
-                <div>
-                    <label for="applicant-phone">Phone Number</label>
-                    <input type="type" id="applicant-phone" name="phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                <div class="input-field">
+                    <label for="applicant-phone" class="field-label">Phone Number</label>
+                    <input type="type" id="applicant-phone" name="phone number" class="field-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                         placeholder="Enter phone number">
-                    <p class="extra">In the format ###-###-####</p>
+                    <p class="field-extra">In the format ###-###-####</p>
                 </div>
                 <br>
-                <div>
-                    <label for="applicant-email">Email</label>
-                    <input type="Email" id="applicant-email" name="Email" placeholder="Enter Email Address">
+                <div class="input-field">
+                    <label for="applicant-email" class="field-label">Email</label>
+                    <input type="Email" id="applicant-email" name="Email" class="field-input" placeholder="Enter Email Address">
                 </div>
                 <br>
-                <div>
-                    <label for="applicant-message">Message</label>
-                    <textarea name="Message" id="applicant-message"></textarea>
+                <div class="input-field">
+                    <label for="applicant-message" class="field-label">Message</label>
+                    <textarea name="Message" id="applicant-message" class="field-input"></textarea>
                 </div>
                 <br>
-                <div>
-                    <label for="applicant-gender">Gender</label>
-                    <select name="gender" id="applicant-gender">
+                <div class="input-field">
+                    <label for="applicant-gender" class="field-label">Gender</label>
+                    <select name="gender" id="applicant-gender" class="field-input">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="Other">Other</option>
@@ -122,10 +122,10 @@
                     <br>
                 </div>
                 <br>
-                <div>
-                    <label for="applicant-resume">Upload Resume</label>
-                    <input type="file" id="applicant-resume" name="uploaded_file"></input><br />
-                    <input type="submit" value="Upload"></input>
+                <div class="input-field">
+                    <label for="applicant-resume" class="field-label">Upload Resume</label>
+                    <input type="file" id="applicant-resume" name="uploaded_file" class="field-input"></input><br />
+                    <input type="submit" value="Upload" class="field-extra"></input>
                 </div>
                 <br>
                 <input type="submit" name="submit" value="Submit">
@@ -201,7 +201,7 @@
         </div>
     </footer>
 
-    <script src="gallery.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 
 </html>
