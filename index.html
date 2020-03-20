@@ -73,7 +73,7 @@
 
         <!-- TEACHER APPLICATION -->
         <div class="teacher-application">
-            
+
             <h1>Job Application</h1>
             <br>
             <p><em>Do you have a positive attitude, a love of new and different experiences and the
@@ -86,33 +86,34 @@
             <!-- Forms -->
             <form action="/action_page.php" method="post">
                 <div>
-                    <label>First Name</label>
-                    <input type="text" name="firstName" placeholder="Enter first name">
+                    <label for="applicant-firstname">First Name</label>
+                    <input type="text" id="applicant-firstname" name="firstName" placeholder="Enter first name">
                 </div>
                 <br>
                 <div>
-                    <label>Last Name</label>
-                    <input type="text" name="last name" placeholder="Enter last name">
+                    <label for="applicant-lastname">Last Name</label>
+                    <input type="text" id="applicant-lastname" name="last name" placeholder="Enter last name">
                 </div>
                 <br>
                 <div>
-                    <label>Phone Number</label>
-                    <input type="number" name="phone number"placeholder="Enter phone number">
+                    <label for="applicant-phone">Phone Number</label>
+                    <input type="type" id="applicant-phone" name="phone number" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                        placeholder="Enter phone number">
                 </div>
                 <br>
                 <div>
-                    <label>Email</label>
-                    <input type="Email" name="Email" placeholder="Enter Email Address">
+                    <label for="applicant-email">Email</label>
+                    <input type="Email" id="applicant-email" name="Email" placeholder="Enter Email Address">
                 </div>
                 <br>
                 <div>
-                    <label>Message</label>
-                    <textarea name="Message"></textarea>
+                    <label for="applicant-message">Message</label>
+                    <textarea name="Message" id="applicant-message"></textarea>
                 </div>
                 <br>
                 <div>
-                    <label>Gender</label>
-                    <select name="gender">
+                    <label for="applicant-gender">Gender</label>
+                    <select name="gender" id="applicant-gender">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="Other">Other</option>
@@ -120,15 +121,11 @@
                     </select>
                     <br>
                 </div>
-
-
                 <br>
                 <div>
-                   
-                <label>Upload Resume</label>
-                <input type="file" name="uploaded_file"></input><br />
-                <input type="submit" value="Upload"></input>
-    
+                    <label for="applicant-resume">Upload Resume</label>
+                    <input type="file" id="applicant-resume" name="uploaded_file"></input><br />
+                    <input type="submit" value="Upload"></input>
                 </div>
                 <br>
                 <input type="submit" name="submit" value="Submit">
