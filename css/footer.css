@@ -8,7 +8,7 @@ footer {
 }
 
 footer a {
-  color: #AAA;
+  color: #aaa;
   text-decoration: none;
 }
 
@@ -32,6 +32,30 @@ footer .footer-content .footer-section.about {
 
 footer .footer-content .footer-section .contact > div {
   margin: 3px 0;
+}
+
+footer .footer-content .footer-section.contact-form .text-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+footer .footer-content .footer-section.contact-form textarea {
+  resize: vertical;
+}
+
+footer .footer-content .footer-section.contact-form .btn {
+  background-color: maroon;
+  box-shadow: 1px 1px 5px #222;
+  color: white;
+  padding: 0.325em 0.875em;
+  border: none;
+  border-radius: 5px;
 }
 
 .socials {
