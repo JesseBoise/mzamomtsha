@@ -17,5 +17,5 @@
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
-  box-shadow: 8px 8px 12px #ccc;
+  box-shadow: 4px 4px 12px #ccc;
 }
