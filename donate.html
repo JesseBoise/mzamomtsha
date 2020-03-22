@@ -43,7 +43,7 @@
     <!-- BODY -->
     <main>
         <!-- DONATION FORM -->
-        <h1>The input form for contribution</h1>
+        <!-- <h1>The input form for contribution</h1>
 
         <p>The form attribute specifies the form an input element belongs to and how much the volunteer or
             applicant would like to donate towards our future.</p>
@@ -88,9 +88,50 @@
                 <p>
                     <input type="submit">
                 </p>
+        </form> -->
+        <h2>MAKE A GIFT</h2>
+
+        <!-- Forms -->
+        <form action="process.php" method="POST">
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName" placeholder="Enter first name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="last name" placeholder="Enter last name">
+            </div>
+            <br>
+            <div>
+                <label>Organization</label>
+                <input type="text" name="Organization name" placeholder="Enter Organization name">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="Email" name="Email" placeholder="Enter Email Address">
+            </div>
+            <br>
+            <div>
+                <label>Amount</label>
+                <input type="number" name="Payment Amount" placeholder="R 0.00">
+            </div>
+            <br>
+            <div>
+                <label>Type of donation</label>
+                <select name="Donation type">
+                    <option value="One time Donation">One time Donation</option>
+                    <option value="Monthly Donation">Monthly Donation</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit" name="Donate" value="Donate">
+            </div>
         </form>
     </main>
-    
+
     <!-- FOOTER -->
     <footer>
         <div class="footer-content">
