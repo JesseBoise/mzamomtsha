@@ -89,36 +89,37 @@
                 <div class="input-field">
                     <label for="applicant-firstname" class="field-label">First Name</label>
                     <input type="text" id="applicant-firstname" name="firstName" class="field-input"
-                        placeholder="Enter first name">
+                        placeholder="Enter first name" required>
                 </div>
                 <br>
                 <div class="input-field">
                     <label for="applicant-lastname" class="field-label">Last Name</label>
                     <input type="text" id="applicant-lastname" name="last name" class="field-input"
-                        placeholder="Enter last name">
+                        placeholder="Enter last name" required>
                 </div>
                 <br>
                 <div class="input-field">
                     <label for="applicant-phone" class="field-label">Phone Number</label>
                     <input type="type" id="applicant-phone" name="phone number" class="field-input"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter phone number">
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter phone number" required>
                     <p class="field-extra">In the format ###-###-####</p>
                 </div>
                 <br>
                 <div class="input-field">
                     <label for="applicant-email" class="field-label">Email</label>
                     <input type="Email" id="applicant-email" name="Email" class="field-input"
-                        placeholder="Enter Email Address">
+                        placeholder="Enter Email Address" required>
                 </div>
                 <br>
                 <div class="input-field">
                     <label for="applicant-message" class="field-label">Message</label>
                     <textarea name="Message" id="applicant-message" class="field-input"></textarea>
+                    <p class="field-extra">Optional</p>
                 </div>
                 <br>
                 <div class="input-field">
                     <label for="applicant-gender" class="field-label">Gender</label>
-                    <select name="gender" id="applicant-gender" class="field-input">
+                    <select name="gender" id="applicant-gender" class="field-input" required>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="Other">Other</option>
@@ -127,8 +128,8 @@
                 <br>
                 <div class="input-field">
                     <label for="applicant-resume" class="field-label">Upload Resume</label>
-                    <input type="file" id="applicant-resume" name="uploaded_file" class="field-input"></input><br />
-                    <!-- <input type="submit" value="Upload" class="field-extra"></input> -->
+                    <input type="file" id="applicant-resume" name="uploaded_file" class="field-input" required></input>
+                    <!-- <br /><input type="submit" value="Upload" class="field-extra"></input> -->
                 </div>
                 <br>
                 <input type="submit" class="teacher-submit" name="submit" value="Submit">
