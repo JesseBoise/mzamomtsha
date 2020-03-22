@@ -97,34 +97,35 @@
             <form action="process.php" method="POST">
                 <div class="input-field">
                     <label class="field-label">First Name</label>
-                    <input type="text" class="field-input" name="firstName" placeholder="Enter first name">
+                    <input type="text" class="field-input" name="firstName" placeholder="Enter first name" required>
                 </div>
                 <br>
                 <div class="input-field">
                     <label class="field-label">Last Name</label>
-                    <input type="text" class="field-input" name="last name" placeholder="Enter last name">
+                    <input type="text" class="field-input" name="last name" placeholder="Enter last name" required>
                 </div>
                 <br>
                 <div class="input-field">
                     <label class="field-label">Organization</label>
                     <input type="text" class="field-input" name="Organization name"
                         placeholder="Enter Organization name">
+                    <p class="field-extra">Optional</p>
                 </div>
                 <br>
                 <div class="input-field">
                     <label class="field-label">Email</label>
-                    <input type="Email" class="field-input" name="Email" placeholder="Enter Email Address">
+                    <input type="Email" class="field-input" name="Email" placeholder="Enter Email Address" required>
                 </div>
                 <br>
                 <div class="input-field">
                     <label class="field-label">Amount</label>
                     <input type="number" class="field-input" name="Payment Amount" placeholder="0.00"
-                        pattern="^\d*(\.\d{0,2})?$">
+                        pattern="^\d*(\.\d{0,2})?$" required>
                 </div>
                 <br>
                 <div class="input-field">
                     <label class="field-label">Type of donation</label>
-                    <select name="Donation type" class="field-input">
+                    <select name="Donation type" class="field-input" required>
                         <option value="One time Donation">One time Donation</option>
                         <option value="Monthly Donation">Monthly Donation</option>
                     </select>
