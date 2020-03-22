@@ -94,42 +94,42 @@
 
             <!-- Forms -->
             <form action="process.php" method="POST">
-                <div>
-                    <label>First Name</label>
-                    <input type="text" name="firstName" placeholder="Enter first name">
+                <div class="field-input">
+                    <label class="input-label">First Name</label>
+                    <input type="text" class="input-field" name="firstName" placeholder="Enter first name">
                 </div>
                 <br>
-                <div>
-                    <label>Last Name</label>
-                    <input type="text" name="last name" placeholder="Enter last name">
+                <div class="field-input">
+                    <label class="input-label">Last Name</label>
+                    <input type="text" class="input-field" name="last name" placeholder="Enter last name">
                 </div>
                 <br>
-                <div>
-                    <label>Organization</label>
-                    <input type="text" name="Organization name" placeholder="Enter Organization name">
+                <div class="field-input">
+                    <label class="input-label">Organization</label>
+                    <input type="text" class="input-field" name="Organization name"
+                        placeholder="Enter Organization name">
                 </div>
                 <br>
-                <div>
-                    <label>Email</label>
-                    <input type="Email" name="Email" placeholder="Enter Email Address">
+                <div class="field-input">
+                    <label class="input-label">Email</label>
+                    <input type="Email" class="input-field" name="Email" placeholder="Enter Email Address">
                 </div>
                 <br>
-                <div>
-                    <label>Amount</label>
-                    <input type="number" name="Payment Amount" placeholder="0.00" pattern="^\d*(\.\d{0,2})?$">
+                <div class="field-input">
+                    <label class="input-label">Amount</label>
+                    <input type="number" class="input-field" name="Payment Amount" placeholder="0.00"
+                        pattern="^\d*(\.\d{0,2})?$">
                 </div>
                 <br>
-                <div>
-                    <label>Type of donation</label>
-                    <select name="Donation type">
+                <div class="field-input">
+                    <label class="input-label">Type of donation</label>
+                    <select name="Donation type" class="input-field">
                         <option value="One time Donation">One time Donation</option>
                         <option value="Monthly Donation">Monthly Donation</option>
                     </select>
                 </div>
                 <br>
-                <div>
-                    <input type="submit" name="Donate" value="Donate">
-                </div>
+                <input type="submit" class="form-submit" name="Donate" value="Donate">
             </form>
         </div>
     </main>
