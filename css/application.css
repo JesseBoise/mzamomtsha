@@ -23,7 +23,7 @@
   right: 0;
 }
 
-.teacher-application {
+.application-form {
   padding: 15px;
   background-color: white;
   border-radius: 8px;
@@ -32,17 +32,17 @@
   text-align: center;
 }
 
-.teacher-application form {
+.application-form form {
   display: block;
   width: 50%;
   margin: 0 auto;
 }
 
-.teacher-application .input-field {
+.application-form .input-field {
   text-align: left;
 }
 
-.teacher-application .input-field .field-label {
+.application-form .input-field .field-label {
   display: block;
   float: left;
   width: calc(40% - 8px);
@@ -51,7 +51,7 @@
   padding: 8px 0;
 }
 
-.teacher-application .input-field .field-input {
+.application-form .input-field .field-input {
   display: block;
   width: 60%;
   vertical-align: middle;
@@ -62,20 +62,20 @@
   padding: 8px 12px;
 }
 
-.teacher-application .input-field textarea.field-input {
+.application-form .input-field textarea.field-input {
 
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 8px 12px;
 }
 
-.teacher-application .input-field .field-extra {
+.application-form .input-field .field-extra {
   text-align: left;
   color: #555;
   font-size: 0.9em;
 }
 
-.teacher-application .teacher-submit {
+.application-form .teacher-submit {
     border: none;
     border-radius: 8px;
     padding: 0.675em 1.325rem;
