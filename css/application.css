@@ -68,11 +68,6 @@
   padding: 8px 12px;
 }
 
-.application-form .input-field textarea.field-input:invalid {
-  border-color: red;
-  box-shadow: 0 0 0 2px #f222;
-}
-
 .application-form .input-field .field-extra {
   text-align: left;
   color: #555;
