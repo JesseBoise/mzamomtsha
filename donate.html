@@ -89,47 +89,49 @@
                     <input type="submit">
                 </p>
         </form> -->
-        <h2>MAKE A GIFT</h2>
+        <div class="donation-application application-form">
+            <h2>MAKE A GIFT</h2>
 
-        <!-- Forms -->
-        <form action="process.php" method="POST">
-            <div>
-                <label>First Name</label>
-                <input type="text" name="firstName" placeholder="Enter first name">
-            </div>
-            <br>
-            <div>
-                <label>Last Name</label>
-                <input type="text" name="last name" placeholder="Enter last name">
-            </div>
-            <br>
-            <div>
-                <label>Organization</label>
-                <input type="text" name="Organization name" placeholder="Enter Organization name">
-            </div>
-            <br>
-            <div>
-                <label>Email</label>
-                <input type="Email" name="Email" placeholder="Enter Email Address">
-            </div>
-            <br>
-            <div>
-                <label>Amount</label>
-                <input type="number" name="Payment Amount" placeholder="0.00" pattern="^\d*(\.\d{0,2})?$">
-            </div>
-            <br>
-            <div>
-                <label>Type of donation</label>
-                <select name="Donation type">
-                    <option value="One time Donation">One time Donation</option>
-                    <option value="Monthly Donation">Monthly Donation</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <input type="submit" name="Donate" value="Donate">
-            </div>
-        </form>
+            <!-- Forms -->
+            <form action="process.php" method="POST">
+                <div>
+                    <label>First Name</label>
+                    <input type="text" name="firstName" placeholder="Enter first name">
+                </div>
+                <br>
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" name="last name" placeholder="Enter last name">
+                </div>
+                <br>
+                <div>
+                    <label>Organization</label>
+                    <input type="text" name="Organization name" placeholder="Enter Organization name">
+                </div>
+                <br>
+                <div>
+                    <label>Email</label>
+                    <input type="Email" name="Email" placeholder="Enter Email Address">
+                </div>
+                <br>
+                <div>
+                    <label>Amount</label>
+                    <input type="number" name="Payment Amount" placeholder="0.00" pattern="^\d*(\.\d{0,2})?$">
+                </div>
+                <br>
+                <div>
+                    <label>Type of donation</label>
+                    <select name="Donation type">
+                        <option value="One time Donation">One time Donation</option>
+                        <option value="Monthly Donation">Monthly Donation</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" name="Donate" value="Donate">
+                </div>
+            </form>
+        </div>
     </main>
 
     <!-- FOOTER -->
