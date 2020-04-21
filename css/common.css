@@ -6,13 +6,13 @@
 /* Common styles */
 * {
   box-sizing: border-box;
-  background-color: var(--body-background-color);
   margin: 0;
   padding: 0;
 }
 
 body {
-    font-family: Calibri;
+  background-color: var(--body-background-color);
+  font-family: Calibri;
 }
 
 main {
