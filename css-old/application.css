@@ -1,0 +1,84 @@
+.donation-link {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 8px 8px 24px #ccc;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.donation-link .donate {
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(75deg, maroon, red);
+  font-weight: bold;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 8px;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.application-form {
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 8px 8px 24px #ccc;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.application-form form {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.application-form .input-field {
+  text-align: left;
+}
+
+.application-form .input-field .field-label {
+  display: block;
+  float: left;
+  width: calc(40% - 8px);
+  margin-right: 8px;
+  text-align: right;
+  padding: 8px 0;
+}
+
+.application-form .input-field .field-input {
+  display: block;
+  width: 60%;
+  vertical-align: middle;
+
+  /* TEST */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.application-form .input-field textarea.field-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.application-form .input-field .field-extra {
+  text-align: left;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.application-form .form-submit {
+    border: none;
+    border-radius: 5px;
+    padding: 0.675em 1.325rem;
+    background-image: linear-gradient(75deg, maroon, red);
+    box-shadow: 3px 3px 8px #CCC;
+    color: white;
+}

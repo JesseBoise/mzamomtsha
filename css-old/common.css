@@ -1,0 +1,26 @@
+/* Creating variables */
+:root {
+  --body-background-color: #f7f7f7;
+}
+
+/* Common styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--body-background-color);
+  font-family: Calibri;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+ul {
+  list-style: none;
+}

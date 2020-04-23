@@ -1,0 +1,14 @@
+.contact-information {
+    float: left;
+    width: 250px;
+    margin-top: calc(2em + 15px);
+}
+
+.contact-information .fas {
+    float: left;
+    margin-right: 8px;
+}
+
+.contact-information pre {
+    overflow: hidden;
+}
